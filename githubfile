@@ -4,6 +4,25 @@ client = pymongo.MongoClient("mongodb+srv://megha1234:abhi1612@cluster0.g9y2ocn.
 db = client.test
 print(db)
 
+
+d = {
+    "name" : "megha",
+    "email" : "meghapandey5543@gmail.com",
+    "surname" : "megha1234"
+}
+db1 = client['mongotest']
+coll = db1['test']
+coll.insert_one(d)
+
+d = {
+    "name" : "megha",
+    "email" : "meghapandey5543@gmail.com",
+    "surname" : "megha1234"
+}
+db1 = client['mongotest']
+coll = db1['test']
+coll.insert_one(d)
+
 d = {
     "name" : "megha",
     "email" : "meghapandey5543@gmail.com",
